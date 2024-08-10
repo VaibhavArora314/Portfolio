@@ -47,7 +47,7 @@ function Home() {
         </a>
       </div>
       <div className="home-img">
-        <img src="../assets/img/profile_img.png" alt="Profile" />
+        <img src="./src/assets/img/profile_img.png" alt="Profile" />
       </div>
       <div className="home-text">
         <span>Hello, I'm</span>
