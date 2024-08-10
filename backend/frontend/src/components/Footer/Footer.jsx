@@ -10,7 +10,6 @@ function Footer() {
                     <a href="https://www.facebook.com/devaftab/" target="_blank" rel="noopener noreferrer"><i className="bx bxl-facebook"></i></a>
                     <a href="https://twitter.com/learning_aftab" target="_blank" rel="noopener noreferrer"><i className="bx bxl-twitter"></i></a>
                     <a href="https://www.instagram.com/dev_aftab/" target="_blank" rel="noopener noreferrer"><i className="bx bxl-instagram"></i></a>
-                    <a href="#"><i className="bx bxl-whatsapp"></i></a>
                 </div>
             </div>
             <div className="copyright">
