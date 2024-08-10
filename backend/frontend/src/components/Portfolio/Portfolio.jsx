@@ -10,22 +10,22 @@ function Portfolio() {
             </div>
             <div className="portfolio-content">
                 <div className="portfolio-img">
-                    <img src="./src/assets/img/123.png" alt="Portfolio" />
+                    <img src="/img/123.png" alt="Portfolio" />
                 </div>
                 <div className="portfolio-img">
-                    <img src="./src/assets/img/123.png" alt="Portfolio" />
+                    <img src="/img/123.png" alt="Portfolio" />
                 </div>
                 <div className="portfolio-img">
-                    <img src="./src/assets/img/123.png" alt="Portfolio" />
+                    <img src="/img/123.png" alt="Portfolio" />
                 </div>
                 <div className="portfolio-img">
-                    <img src="./src/assets/img/123.png" alt="Portfolio" />
+                    <img src="/img/123.png" alt="Portfolio" />
                 </div>
                 <div className="portfolio-img">
-                    <img src="./src/assets/img/123.png" alt="Portfolio" />
+                    <img src="/img/123.png" alt="Portfolio" />
                 </div>
                 <div className="portfolio-img">
-                    <img src="./src/assets/img/123.png" alt="Portfolio" />
+                    <img src="/img/123.png" alt="Portfolio" />
                 </div>
             </div>
         </section>

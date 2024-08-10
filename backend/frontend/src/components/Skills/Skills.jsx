@@ -36,7 +36,7 @@ function Skills() {
                     </div>
                 </div>
                 <div className="skills-img">
-                    <img src="./src/assets/img/123.png" alt="Skills" />
+                    <img src="/img/123.png" alt="Skills" />
                 </div>
             </div>
         </section>
