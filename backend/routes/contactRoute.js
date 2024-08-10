@@ -18,7 +18,7 @@ router.post("/contact", async (req, res) => {
       message: "Message sent successfully. We will get back to you shortly",
     });
   } catch (error) {
-    console.error("Error saving contact:", error.message); // Log the error
+    console.error("Error saving contact:", error.message);
     res.status(500).json({ message: "Server error, try again later." });
   }
 });

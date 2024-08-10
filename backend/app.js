@@ -3,14 +3,28 @@ import cors from "cors";
 import bodyParser from "body-parser";
 import dotenv from "dotenv";
 import MongoDB_connection from "./DB/MondoDB_conection.js";
-
+import path from "path";
+import { fileURLToPath } from "url";
 import contactRoute from "./routes/contactRoute.js";
 
-dotenv.config();
-
 const app = express();
+//deployement start
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
-app.use(cors());
+app.use(express.static(path.join(__dirname, "./frontend/build")));
+app.get("*", function (req, res) {
+  res.sendFile(path.join(__dirname, "/frontend/build", "index.html"));
+});
+//deployement end
+
+dotenv.config();
+const corsOptions = {
+  origin: true,
+  credentials: true,
+};
+
+app.use(cors(corsOptions));
 app.use(bodyParser.json());
 
 app.use("/api", contactRoute);
