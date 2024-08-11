@@ -31,7 +31,7 @@ app.use("/api", contactRoute);
 
 const PORT = process.env.port;
 
-app.listen(PORT, () => {
+app.listen(PORT || 5000, () => {
   MongoDB_connection();
-  console.log("server listening on port", PORT);
+  console.log(`server listening on port", ${PORT}`);
 });
