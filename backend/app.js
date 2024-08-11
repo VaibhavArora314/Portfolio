@@ -37,4 +37,4 @@ app.use("/api", contactRoute);
 //   console.log(`server listening on port ${PORT}`);
 // });
 
-export default app;
+export { app };
