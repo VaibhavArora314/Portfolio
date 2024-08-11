@@ -23,15 +23,16 @@ const corsOptions = {
   origin: true,
   credentials: true,
 };
-
 app.use(cors(corsOptions));
-app.use(bodyParser.json());
 
-app.use("/api", contactRoute);
+app.use(express.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 
 const PORT = process.env.port;
 
-app.listen(PORT || 5000, () => {
+app.use("/api", contactRoute);
+
+app.listen(PORT, () => {
   MongoDB_connection();
-  console.log(`server listening on port", ${PORT}`);
+  console.log(`server listening on port ${PORT}`);
 });

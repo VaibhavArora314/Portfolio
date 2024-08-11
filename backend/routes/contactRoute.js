@@ -1,9 +1,9 @@
 import express from "express";
 import Contact from "../models/contactModal.js";
 
-const router = express.Router();
+const contactRoute = express.Router();
 
-router.post("/contact", async (req, res) => {
+contactRoute.post("/contact", async (req, res) => {
   const { name, email, message } = req.body;
   // console.log("Received data:", { name, email, message }); // Log the incoming data
 
@@ -23,4 +23,4 @@ router.post("/contact", async (req, res) => {
   }
 });
 
-export default router;
+export default contactRoute;
