@@ -2,10 +2,10 @@ import express from "express";
 import cors from "cors";
 import bodyParser from "body-parser";
 import dotenv from "dotenv";
-import MongoDB_connection from "./DB/MondoDB_conection.js";
+import MongoDB_connection from "./DB/MondoDB_conection";
 import path from "path";
 import { fileURLToPath } from "url";
-import contactRoute from "./routes/contactRoute.js";
+import contactRoute from "./routes/contactRoute";
 
 const app = express();
 //deployement start
@@ -32,8 +32,8 @@ const PORT = process.env.port;
 
 app.use("/api", contactRoute);
 
+MongoDB_connection();
 // app.listen(PORT, () => {
-//   MongoDB_connection();
 //   console.log(`server listening on port ${PORT}`);
 // });
 
