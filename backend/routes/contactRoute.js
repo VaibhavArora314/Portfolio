@@ -5,7 +5,7 @@ const contactRoute = express.Router();
 
 contactRoute.post("/contact", async (req, res) => {
   const { name, email, message } = req.body;
-  // console.log("Received data:", { name, email, message }); // Log the incoming data
+  // console.log("Received data:", { name, email, message });
 
   try {
     if (!name || !email || !message) {

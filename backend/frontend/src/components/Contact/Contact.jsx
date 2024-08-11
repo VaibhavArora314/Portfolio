@@ -10,7 +10,7 @@ function Contact() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:5000/api/contact', { name, email, message });
+            const response = await axios.post('/api/contact', { name, email, message });
             alert(response.data.message);
             setName('');
             setEmail('');
