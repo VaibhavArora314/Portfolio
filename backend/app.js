@@ -32,7 +32,9 @@ const PORT = process.env.port;
 
 app.use("/api", contactRoute);
 
-app.listen(PORT, () => {
-  MongoDB_connection();
-  console.log(`server listening on port ${PORT}`);
-});
+// app.listen(PORT, () => {
+//   MongoDB_connection();
+//   console.log(`server listening on port ${PORT}`);
+// });
+
+export default app;
